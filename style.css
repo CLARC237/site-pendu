@@ -1,0 +1,103 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1 {
+    text-align: center;
+    font-size: 36px;
+    margin-top: 20px;
+  }
+  
+  .hangman {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+  }
+  
+  .word-container, .guesses-container, .letters-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .word-container {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .guesses-container {
+    flex-direction: column;
+    align-items: center;
+    margin-left: 20px;
+  }
+  
+  .guesses-container span {
+    font-weight: bold;
+  }
+  
+  .guessed-letters {
+    font-weight: normal;
+    font-size: 16px;
+  }
+  
+  .letters-container {
+    margin-top: 40px;
+  }
+  
+  .letters {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  button {
+    font-size: 22px;
+    margin: 5px;
+    padding: 10px;
+    border: none;
+    background-color: #eee;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #ddd;
+  }
+  
+  button:focus {
+    outline: none;
+    box-shadow: 0px 0px 5px 2px #ccc;
+  }
+  
+  .word, .guesses {
+    font-size: 24px;
+  }
+  
+  .message {
+    font-size: 18px;
+    font-style: italic;
+    color: #888;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .win {
+    color: green;
+  }
+  
+  .loss {
+    color: red;
+  }
+  
+  /* Mise en couleur differente des consonnes et des voyelles */
+  
+  .word-container span.consonant {
+    color: red;
+  }
+  .word-container span.vowel {
+    color: green;
+  }

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Jeu de Pendu de legende</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <h1>Jeu de Pendu par legende</h1>
+  <div class="hangman">
+    <svg width="200" height="200">
+      <line x1="10" y1="190" x2="190" y2="190" stroke="black" stroke-width="4" />
+      <line x1="30" y1="190" x2="30" y2="10" stroke="black" stroke-width="4" />
+      <line x1="30" y1="10" x2="100" y2="10" stroke="black" stroke-width="4" />
+      <line x1="100" y1="10" x2="100" y2="30" stroke="black" stroke-width="4" />
+      <circle cx="100" cy="50" r="20" stroke="black" stroke-width="4" fill="white" />
+      <line x1="100" y1="70" x2="100" y2="110" stroke="black" stroke-width="4" />
+      <line x1="100" y1="90" x2="80" y2="70" stroke="black" stroke-width="4" />
+      <line x1="100" y1="90" x2="120" y2="70" stroke="black" stroke-width="4" />
+      <line x1="100" y1="110" x2="80" y2="140" stroke="black" stroke-width="4" />
+      <line x1="100" y1="110" x2="120" y2="140" stroke="black" stroke-width="4" />
+    </svg>
+  </div>
+  <div class="word-container">
+    <p class="word"></p>
+  </div>
+  <div class="guesses-container">
+    <p>Essais restants: <span class="guesses"></span></p>
+    <p>Lettres essayées: <span class="guessed-letters"></span></p>
+  </div>
+  <div class="letters-container">
+    <div class="letters">
+      <button>A</button>
+      <button>B</button>
+      <button>C</button>
+      <button>D</button>
+      <button>E</button>
+      <button>F</button>
+      <button>G</button>
+      <button>H</button>
+      <button>I</button>
+      <button>J</button>
+      <button>K</button>
+      <button>L</button>
+      <button>M</button>
+      <button>N</button>
+      <button>O</button>
+      <button>P</button>
+      <button>Q</button>
+      <button>R</button>
+      <button>S</button>
+      <button>T</button>
+      <button>U</button>
+      <button>V</button>
+      <button>W</button>
+      <button>X</button>
+      <button>Y</button>
+      <button>Z</button>
+    </div>
+    <p class="message"></p>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
